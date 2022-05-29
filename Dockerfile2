@@ -1,0 +1,6 @@
+FROM alpine 
+COPY test.txt .
+RUN apk update
+RUN apk -vv info|sort
+
+
